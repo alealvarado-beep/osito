@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oso - Ayuda</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f7f3e9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background: rgba(141, 110, 99, 0.9);
+      padding: 15px 0;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+      font-weight: bold;
+      padding: 10px 15px;
+      position: relative;
+      transition: color 0.3s ease-in-out;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar a:hover {
+      color: #ffccbc;
+    }
+
+    .container {
+      margin-top: 100px;
+      padding: 30px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #6d4c41;
+    }
+
+    .contacto-oso {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .foto-contacto {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    .detalles-contacto {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .detalles-contacto p {
+      font-size: 1.1em;
+      margin: 10px 0;
+    }
+
+    .mensaje-final {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 1.2em;
+      font-style: italic;
+      color: #8d6e63;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(141, 110, 99, 0.9);
+      color: white;
+      margin-top: 60px;
+    }
+
+    .detalles-contacto a {
+      color: #6d4c41;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .detalles-contacto a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+      <a href="historia.html"><i class="fas fa-book"></i> Historia</a>
+      <a href="caracteristicas.html"><i class="fas fa-paw"></i> Más sobre Oso</a>
+      <a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
+    </nav>
+  </header>
+
+  <div class="content-wrapper">
+  <div class="container">
+    <h1 class="page-title"> ¿Has visto a Oso? </h1>
+    <p>Oso es más que una mascota. Es parte de nuestra familia. Si estás viendo esta página, probablemente estás tratando de ayudar. ¡Gracias por eso!</p>
+
+    <div class="contacto-oso">
+      <img src="img/oso_rosa.jpg.jpeg" alt="Foto de Oso" class="foto-contacto">
+      <div class="detalles-contacto">
+        <p><strong>Nombre:</strong> Oso</p>
+        <p><strong>Raza:</strong> Mestizo (chihuahua y poodle)</p>
+        <p><strong>Color:</strong> Café con pecho blanco y línea negra en la espalda, orejas negras</p>
+        <p><strong>Señas particulares:</strong> Colmillo derecho más grande, pelaje abundante, patas cortas</p>
+        <p><strong>Última vez visto:</strong>...</p>
+        <p><strong>Contacto:</strong> <a href="mailto:alejsndraz9@gmail.com">alejsndraz9@gmail.com</a></p>
+        <p><strong>Llamar a:</strong>+504 8738-8127</p>
+      </div>
+    </div>
+
+    <p class="mensaje-final">Si tienes alguna información, no dudes en contactarme. Oso significa el mundo para mí y su bienestar lo es todo.</p>
+  </div>
+
+  </div>
+
+  <footer class="footer">
+    "Un perro es lo único en la tierra que te ama más de lo que se ama a sí mismo."<br>
+    &copy; 2025 Oso - Todos los derechos reservados.
+  </footer>
+</body>
+</html>

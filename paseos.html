@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oso</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        body {
+         
+            font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f3e9;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+       
+       .navbar, .footer{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.main-content {
+    flex: 1;
+}
+
+.navbar {
+    background: rgba(141, 110, 99, 0.9); 
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); 
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 15px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.navbar a:not(:last-child)::after {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar a:hover {
+    color: #ffccbc;
+}
+
+.navbar a i {
+    margin-right: 8px;
+    font-size: 1.1em;
+}
+
+   .container {
+           max-width: 900px;
+           margin: auto;
+           background: #f0e6da;
+           padding: 20px;
+           border-radius: 10px;
+           box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+           margin-top: 80px; 
+       }
+
+       .gallery {
+           display: flex;
+           justify-content: center;
+           gap: 10px;
+           flex-wrap: nowrap;
+           margin-bottom: 40px;
+
+       }
+
+       .gallery img {
+           width: 200px;
+           height: 200px;
+           border-radius: 8px;
+           box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+           cursor: pointer;
+           transition: transform 0.3s ease-in-out;
+       }
+
+
+       .gallery img:hover {
+           transform: scale(1.2);
+       }
+
+       .description {
+           text-align: justify;
+           font-size: 1.1em;
+           line-height: 1.6;
+       }
+
+   
+       .btn {
+           background-color: #6d4c41;
+           color: white;
+           padding: 10px 15px;
+           border: none;
+           border-radius: 5px;
+           cursor: pointer;
+           font-size: 1em;
+           text-decoration: none;
+           display: inline-block;
+           margin-top: 20px;
+       }
+
+       .btn:hover {
+           background-color: #8d6e63;
+       }
+
+       .footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: rgba(141, 110, 99, 0.9);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur(10px); 
+    font-size: 0.9em;
+}
+
+
+
+.footer-column {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-column p {
+    margin: 5px 0;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+
+   </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+            <a href="historia.html"><i class="fas fa-book"></i> Historia</a>
+            <a href="caracteristicas.html"><i class="fas fa-paw"></i> Más sobre Oso</a>
+            <a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
+        </nav>
+    </header>
+    
+    
+
+<body>
+
+    <main class="container">
+        <h1>Oso de Paseo</h1>
+        <div class="gallery">
+            <img src="img/paseo2.jpeg" alt="Oso con su pastel">
+            <img src="img/paseo3.jpeg" alt="Oso con gorrito">
+            <img src="img/paseo4.jpeg" alt="Oso jugando en su cumpleaños">
+            <img src="img/paseo5.jpeg" alt="Oso recibiendo regalos">
+        </div>
+
+       
+        <p class="description">
+            Cuando Oso vivía en San Pedro Sula, salir de paseo era casi una necesidad. El jardín de su casa en ese entonces 
+            era pequeño, y su energía parecía infinita. Alejandra lo sacaba a caminar todos los días, aunque más que paseos, 
+            parecían pequeñas batallas. Oso no distinguía tamaños: si veía un perro, sin importar si era diez veces más grande 
+            que él, lo enfrentaba como si fuera su igual. Desde bebé, siempre tuvo una personalidad fuerte, mordiendo a los niños, 
+            ladrando a los perros y dejando claro que él no se intimidaba con nada ni con nadie. 
+        </p>
+        
+        <p class="description">
+            Pero en medio de su actitud desafiante, hubo una excepción. Conoció a una perrita con la que, por primera vez, 
+            podía estar tranquilo. Con ella no había peleas ni mordidas, solo momentos de paz en los que se acostaba en la grama 
+            o se sentaba cerca de los pies de Alejandra, observando el mundo con calma. Era extraño, pero especial.
+        </p>
+        
+        <p class="description">
+            Ahora, los paseos han cambiado. Ya no hay correas ni calles ruidosas. En su hogar actual, Oso no necesita salir 
+            más allá de su propio territorio. No hay vecinos, ni tráfico, ni límites. Alejandra y él pueden caminar sin destino, 
+            sin preocuparse por nada, sabiendo que siempre terminarán de vuelta en casa, en el lugar al que realmente pertenecen.
+        </p>
+
+    </main>
+
+    <br><br>
+
+
+   
+</body>
+
+<footer class="footer">
+    <div class="footer-column">
+        <p>Ubicación: Honduras, CA</p>
+        <p><a href="mailto:oso@correo.com">alejsndraz9@gmail.com</a></p>
+    </div>
+    <div class="footer-column">
+        <p>"Un perro es lo único en la tierra que te ama más de lo que se ama a sí mismo."</p>
+        <p>© 2025 Oso - Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,383 @@
+html, body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f3e9;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+h1{
+    text-align: center;
+}
+.navbar, .footer{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-content {
+    flex: 1;
+}
+
+.navbar {
+    background: rgba(141, 110, 99, 0.9); 
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); 
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 15px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.navbar a:not(:last-child)::after {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar a:hover {
+    color: #ffccbc;
+}
+
+.navbar a i {
+    margin-right: 8px;
+    font-size: 1.1em;
+}
+
+.wiki-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 100px;
+    gap: 30px;
+    padding: 0 10%;
+}
+
+.wiki-description {
+    flex: 2;
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.wiki-info-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wiki-image img {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.wiki-info table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f0e6da;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.wiki-info th, .wiki-info td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.wiki-info th {
+    background: #8d6e63;
+    color: white;
+    font-weight: bold;
+}
+
+.wiki-description a {
+    color: #ff8c94;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 2px 5px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.wiki-description a:hover {
+    background: #ffccbc;
+    text-decoration: underline;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 40px auto;
+    max-width: 700px; 
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.hover-galeria {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(230, 150, 170, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover .hover-galeria {
+    transform: scale(1);
+}
+
+.hover-galeria a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    background: rgba(141, 110, 99, 0.9);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur(10px); 
+    font-size: 0.9em;
+}
+
+
+
+.footer-column {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-column p {
+    margin: 5px 0;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+    
+}
+
+.timeline-page{
+    background: url('img/Diseño\ sin\ título\ \(5\).png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 0px;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: #8d6e63;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-event {
+    position: relative;
+    width: 40%;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.timeline-event h2, 
+.timeline-event p{
+    padding-left: -5px;
+    padding-right: 20px;
+}
+
+.timeline-event:nth-child(odd) {
+    left: -1%;
+}
+
+.timeline-event:nth-child(even) {
+    left: 52%;
+}
+
+.timeline-icon {
+   
+    width: 40px;
+    height: 40px;
+    background: #ff8c94;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.2em;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-content {
+    margin-left: 50px;
+    text-align: justify;
+}
+
+strong {
+    background-color: #ff8c94;
+    padding: 3px 6px;
+    border-radius: 5px;
+    color: white;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #6d4c41;
+    margin-bottom: 30px;
+}
+
+/* 📌 SECCIÓN SIGNIFICADO Y APARIENCIA */
+.about-oso {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.oso-meaning, .oso-details {
+    flex: 1;
+    background: #f0e6da;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.oso-details h2, .oso-meaning h2 {
+    color: #8d6e63;
+    text-align: center;
+}
+
+mark {
+    background-color: #ff8c94;
+    padding: 3px 6px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* 📌 SECCIÓN CURIOSIDADES */
+.oso-facts {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.fact-card {
+    background: #f0e6da;
+    color: #6d4c41;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fact-card i {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.content-wrapper{
+    flex: 1;
+    padding: 20px;
+}
